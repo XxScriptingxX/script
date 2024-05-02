@@ -1,0 +1,41 @@
+local target = true 
+local targetplr = ' '
+local heartbeat = game:GetService("RunService").heartbeat
+
+
+
+
+while true do 
+    heartbeat:Wait()
+    if target == true then 
+    local character = game.Players[targetplr].Character.HumanoidRootPart
+local lastPosition = character.Position
+task.wait()
+    local currentPosition = character.Position
+    local velocity = (currentPosition - lastPosition) * 58
+    local lastPosition = currentPosition
+character.AssemblyLinearVelocity = velocity 
+character.Velocity = velocity 
+
+end 
+endlocal target = true 
+local targetplr = ' '
+local heartbeat = game:GetService("RunService").heartbeat
+
+
+
+
+while true do 
+    heartbeat:Wait()
+    if target == true then 
+    local character = game.Players[targetplr].Character.HumanoidRootPart
+local lastPosition = character.Position
+task.wait()
+    local currentPosition = character.Position
+    local velocity = (currentPosition - lastPosition) * 58
+    local lastPosition = currentPosition
+character.AssemblyLinearVelocity = velocity 
+character.Velocity = velocity 
+
+end 
+end
